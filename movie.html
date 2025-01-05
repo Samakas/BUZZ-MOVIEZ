@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE REVIEW</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="nav_logo">
+            <a href="#">
+              <img src="Screenshot 2024-07-09 110322.png" alt="MOVIE Logo"/>
+            </a>
+          </div>
+  
+          <input type="checkbox" id="click" />
+          <label for="click">
+            <i class="menu_btn bx bx-menu"></i>
+            <i class="close_btn bx bx-x"></i>
+          </label>
+  
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movie.html">Movie Review</a></li>
+            <li><a href="cinema.html">Theatres Review</a></li>
+            <li><a href="why.html">Why Us</a></li>
+            <li><a href="gallary.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="search">
+              <h1>MOVIE REVIEW</h1>
+              <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+            </div>
+            <div class="product-list">
+              <div class="product">
+                <img src="kalki4 (1).jpeg">
+                <h3>KALKI 2898AD(2024)</h3>
+                <a href="kalki.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>3.5/5</h4>
+              </div>
+              <div class="product">
+                <img src="indian2.jpeg">
+                <h3>INDIAN 2(2024)</h3>
+                <a href="indian.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>2.5/5</h4>
+              </div>
+              <div class="product">
+                <img src="leo1 (1).jpeg">
+                <h3>LEO(2023)</h3>
+                <a href="leo.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>3.75/5</h4>
+              </div>
+              <div class="product">
+                <img src="jailer (1).jpeg">
+                <h3>JAILER(2023)</h3>
+                <a href="jailer.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>3.75/5</h4>
+              </div>
+              <div class="product">
+                <img src="vikram (1).jpeg">
+                <h3>VIKRAM(2022)</h3>
+                <a href="vikram.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>4.5/5</h4>
+              </div>
+              <div class="product">
+                <img src="master (1).jpg">
+                <h3>MASTER(2021)</h3>
+                <a href="master.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>4/5</h4>
+              </div>
+              <div class="product">
+                <img src="chithha (1).jpeg">
+                <h3>CHITHHA(2023)</h3>
+                <a href="chitha.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>4/5</h4>
+              </div>
+              <div class="product">
+                <img src="jigarthanda (1).jpeg">
+                <h3>JIGARTHANDA-2(2023)</h3>
+                <a href="jigarthanda.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>4/5</h4>
+              </div>
+              <div class="product">
+                <img src="captain miller (1).jpeg">
+                <h3>CAPTAIN MILLER(2024)</h3>
+                <a href="captain.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>3/5</h4>
+              </div>
+              <div class="product">
+                <img src="maaveeran (1).jpeg">
+                <h3>MAAVEERAN(2023)</h3>
+                <a href="maaveeran.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>4/5</h4>
+              </div>
+              <div class="product">
+                <img src="mark antony (1).jpeg">
+                <h3>MARK ANTONY(2023)</h3>
+                <a href="antony.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>4/5</h4>
+              </div>
+              <div class="product">
+                <img src="ponniyin selvan (1).jpeg">
+                <h3>PS-1(2022)</h3>
+                <a href="ps.html"><button class="button">CLICK FOR MOVIE REVIEW</button></a>
+                <h4>Rating - <span>★</span>3.5/5</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          function search(){
+            let filter = document.getElementById('find').value.toUpperCase();
+            let item = document.querySelectorAll('.product');
+            let l = document.getElementsByTagName('h3');
+            for(var i = 0;i<=l.length;i++){
+              let a=item[i].getElementsByTagName('h3')[0];
+              let value=a.innerHTML || a.innerText || a.textContent;
+              if(value.toUpperCase().indexOf(filter) > -1) {
+                item[i].style.display="";
+              }
+              else{
+                item[i].style.display="none";
+              }
+            }
+          }
+        </script>
+        
+    
+      <footer>
+        <div class="section_container">
+          <div class="footer_section">
+            <div class="footer_logo">
+              <a href="index.html">
+                <img src="Screenshot 2024-07-09 110322.png" alt="cinema" />
+              </a>
+            </div>
+  
+            <div class="useful_links">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a href="movie.html">Movie Review</a></li>
+                <li><a href="cinema.html">Theatres</a></li>
+                <li><a href="why.html">Why Us</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+  
+            <div class="contact_us">
+              <h3>Contact</h3>
+              <ul>
+                <li>
+                  <i class="bx bx-current-location"></i>
+                  <span>Chennai, Tamil Nadu</span>
+                </li>
+                <li>
+                  <i class="bx bxs-phone-call"></i> <span>+91 1234567890</span>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="follow_us">
+              <h3>Follow</h3>
+              <i class="bx bxl-facebook-circle"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-instagram-alt"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
